@@ -9,7 +9,7 @@
         <Method name="toString" returnType="String" visibility="public" isAbstract="true"/>
       </Methods>
     </Class>
-    <Class name="Game" package="ca.sheridancollege.project" visibility="public" isAbstract="true" xPosition="320.0" yPosition="20.0">
+    <Class name="Game" package="ca.sheridancollege.project" visibility="public" isAbstract="true" xPosition="103.0" yPosition="291.0">
       <Fields>
         <Field name="gameName" type="String" visibility="private" isFinal="true"/>
         <Field name="players" type="ArrayList&lt;Player&gt;" visibility="private"/>
@@ -29,7 +29,7 @@
         <Method name="declareWinner" returnType="void" visibility="public" isAbstract="true"/>
       </Methods>
     </Class>
-    <Class name="GroupOfCards" package="ca.sheridancollege.project" visibility="public" xPosition="620.0" yPosition="20.0">
+    <Class name="GroupOfCards" package="ca.sheridancollege.project" visibility="public" xPosition="492.0" yPosition="20.0">
       <Fields>
         <Field name="cards" type="ArrayList&lt;Card&gt;" visibility="private"/>
         <Field name="size" type="int" visibility="private"/>
@@ -48,7 +48,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Player" package="ca.sheridancollege.project" visibility="public" isAbstract="true" xPosition="920.0" yPosition="20.0">
+    <Class name="Player" package="ca.sheridancollege.project" visibility="public" isAbstract="true" xPosition="559.0" yPosition="320.0">
       <Fields>
         <Field name="playerID" type="String" visibility="private"/>
       </Fields>
@@ -67,9 +67,9 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <HasRelation name="cards" source="ca.sheridancollege.project.GroupOfCards" target="ca.sheridancollege.project.Card" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Card&gt;"/>
-    <UseRelation source="ca.sheridancollege.project.Game" target="ca.sheridancollege.project.Player" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="players" source="ca.sheridancollege.project.Game" target="ca.sheridancollege.project.Player" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Player&gt;"/>
+    <HasRelation name="cards" source="ca.sheridancollege.project.GroupOfCards" target="ca.sheridancollege.project.Card" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Card&gt;"/>
     <UseRelation source="ca.sheridancollege.project.GroupOfCards" target="ca.sheridancollege.project.Card" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ca.sheridancollege.project.Game" target="ca.sheridancollege.project.Player" sourceCardinality="1..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>
